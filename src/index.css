@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply antialiased text-base leading-relaxed text-gray-200 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950;
+  }
+}
