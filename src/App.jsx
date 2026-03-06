@@ -9,10 +9,15 @@ import TestingApproach from './components/TestingApproach'
 import Testimonials from './components/Testimonials'
 import TestingPhilosophy from './components/TestingPhilosophy'
 import Contact from './components/Contact'
+import ParticlesBackground from './components/ParticlesBackground'
 
 export default function App() {
   return (
-    <div className="min-h-screen font-sans">
+    <div className="min-h-screen font-sans relative">
+      <div className="fixed inset-0 z-0 pointer-events-none" aria-hidden>
+        <ParticlesBackground className="absolute inset-0 w-full h-full" />
+      </div>
+      <div className="relative z-10">
       <nav className="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-8 py-4 flex flex-wrap items-center justify-between gap-4">
           <a href="#" className="text-white font-semibold">
@@ -48,6 +53,7 @@ export default function App() {
           © 2026 Sarath Sasidharan · QA Engineer
         </div>
       </footer>
+      </div>
     </div>
   )
 }

@@ -92,14 +92,14 @@ export default function Hero() {
 
   return (
     <section
-      className="min-h-[55vh] flex flex-col justify-center px-8 pt-28 pb-24 max-w-7xl mx-auto"
+      className="relative min-h-[55vh] flex flex-col justify-center px-8 pt-28 pb-24 max-w-7xl mx-auto"
       aria-label="Introduction"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="space-y-6"
+        className="relative space-y-6"
       >
         <h1 className="text-5xl md:text-6xl font-bold text-white tracking-tight leading-tight">
           QA Engineer Who Ships Confidence
